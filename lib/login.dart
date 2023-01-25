@@ -29,7 +29,9 @@ class _loginpageState extends State<loginpage> {
             controller: _passwordController,
             decoration: const InputDecoration(labelText: "Password"),
           ),
-          ElevatedButton(onPressed: () {}, child: const Text("login")),
+          ElevatedButton(onPressed: () {
+            print("success");
+          }, child: const Text("login")),
           ElevatedButton(
               onPressed: () {
                 Navigator.push(
@@ -38,6 +40,8 @@ class _loginpageState extends State<loginpage> {
                       builder: (context) => registerpage(),
                     ));
               },
+              
+              
               child: const Text("Register"))
         ],
       )),
